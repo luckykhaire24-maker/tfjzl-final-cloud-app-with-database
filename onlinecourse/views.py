@@ -142,5 +142,6 @@ def show_exam_result(request, course_id, submission_id):
         'course': course,
         'selected_ids': selected_ids,
         'grade': grade,
+        'possible': max_score,
     }
     return render(request, 'onlinecourse/exam_result_bootstrap.html', context)
